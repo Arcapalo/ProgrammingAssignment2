@@ -9,7 +9,6 @@ makeCacheMatrix <- function(x = matrix()) {
       ## set function assigns the argument to x
       x <<- y
       ## Once the set function is called, Inverse is re-set to NULL
-      ## (this is important if you redefine the matrix, x)
       I <<- NULL
     }
     ## get function returns the matrix
@@ -27,7 +26,6 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 ## This function returns the inverse matrix of the
 ## provided in makeCacheMatrix
 cacheSolve <- function(x, ...) {
